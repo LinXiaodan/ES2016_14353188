@@ -11,10 +11,10 @@ DOL配置
 					sudo rm /var/cache/apt/archives/lock
 		 			sudo rm /var/lib/dpkg/lock
 		之后重新开始又出现问题：Err:1 urlA
-		 						Err:2 urlB
-		 						Err:3 urlC
-		 						Temporary failure resolving 'us.archiv.ubuntu.com'
-		 						......
+								Err:2 urlB
+								Err:3 urlC
+								Temporary failure resolving 'us.archiv.ubuntu.com'
+								......
 		原因：无法连接网站
 		解决方式：修改DNS
 					sudo nano /etc/resolv.conf
@@ -27,7 +27,7 @@ DOL配置
 	2）sudo apt-get install g++		#安装g++
 		 通过指令验证g++是否安装成功：g++
 		 成功结果：g++: fatal error:no input files
-		 		   compilation terminated
+					compilation terminated
 				   
 ###3、配置java环境
 	1）将压缩包jdk-8u40-linux-x64.gz复制到/home下
@@ -54,7 +54,7 @@ DOL配置
 		java
 		javac
 			
-###4、配置Build环境，解压缩工具
+###4、配置Build环境、解压缩工具
 	1）sudo apt-get install ant		#build环境
 	2）sudo apt-get install unzip
 		
