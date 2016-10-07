@@ -5,29 +5,29 @@ DOL配置
 
 ###2、配置C/C++环境
 		1）sudo apt-get update		#更新原信息
-		>出现问题：E:Could not lock /var/lib/dpkg/lock -open
-		>可能原因：可能上次安装没正常完成，导致资源被锁
-		>解决方式：将var/lib/apt/liists中的文件全部删掉
-		>			sudo rm /var/cache/apt/archives/lock
-		>			sudo rm /var/lib/dpkg/lock
-		>之后重新开始又出现问题：Err:1 urlA
-		>						Err:2 urlB
-		>						Err:3 urlC
-		>							Temporary failure resolving 'us.archiv.ubuntu.com'
-		>						......
-		>原因：无法连接网站
-		>解决方式：修改DNS
-		>			sudo nano /etc/resolv.conf
-		>			将已有DNS记录使用“#”注释掉，再添加新的DNS记录，如下
-		>				nameserver 8.8.8.8
-		>				nameserver 8.8.4.4
-		>			使用“ctrl+x”保存文件
-		>			锁定文件防止修改DNS
-		>				sudo chattr +i /etc/resolv.conf
+		> 出现问题：E:Could not lock /var/lib/dpkg/lock -open
+		> 可能原因：可能上次安装没正常完成，导致资源被锁
+		> 解决方式：将var/lib/apt/liists中的文件全部删掉
+		> 			sudo rm /var/cache/apt/archives/lock
+		> 			sudo rm /var/lib/dpkg/lock
+		> 之后重新开始又出现问题：Err:1 urlA
+		> 						Err:2 urlB
+		> 						Err:3 urlC
+		> 							Temporary failure resolving 'us.archiv.ubuntu.com'
+		> 						......
+		> 原因：无法连接网站
+		> 解决方式：修改DNS
+		> 			sudo nano /etc/resolv.conf
+		> 			将已有DNS记录使用“#”注释掉，再添加新的DNS记录，如下
+		> 				nameserver 8.8.8.8
+		> 				nameserver 8.8.4.4
+		> 			使用“ctrl+x”保存文件
+		> 			锁定文件防止修改DNS
+		> 				sudo chattr +i /etc/resolv.conf
 		2）sudo apt-get install g++		#安装g++
-		>通过指令验证g++是否安装成功：g++
-		>成功结果：g++: fatal error:no input files
-		>		   compilation terminated
+		> 通过指令验证g++是否安装成功：g++
+		> 成功结果：g++: fatal error:no input files
+		> 		   compilation terminated
 				   
 ###3、配置java环境
 		1）将压缩包jdk-8u40-linux-x64.gz复制到/home下
@@ -87,11 +87,11 @@ DOL配置
 		4）运行第一个例子
 			cd build/bin/main
 			sudo ant -f runexample.xml -Dnumber=1
-			>出现问题：build failed，提示java的相关问题
-			>解决方法：选择正确的JDK版本
-			>	查看当前各种JDK版本和配置
-			>	sudo update-alternatives --config java
-			>	选择/usr/bin/java下的JDK
+			> 出现问题：build failed，提示java的相关问题
+			> 解决方法：选择正确的JDK版本
+			> 	查看当前各种JDK版本和配置
+			> 	sudo update-alternatives --config java
+			> 	选择/usr/bin/java下的JDK
 			最后重新执行以上语句，成功后显示build successful
 			
 			
