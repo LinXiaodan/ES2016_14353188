@@ -27,4 +27,4 @@
 ####2、	启动测试2D示例
 	roslaunch cartographer_ros demo_backpack_2d.launch bag_filename:=${HOME}/Downloads/cartographer_paper_deutsches_museum.bag
 ####3、获得结果显示如下
-![image](https://github.com/LinXiaodan/ES2016_14353188/tree/master/images/car.PNG)
+![image](https://github.com/LinXiaodan/ES2016_14353188/raw/master/images/car.PNG)
