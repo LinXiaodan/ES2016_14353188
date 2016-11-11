@@ -1,1 +1,30 @@
-å®‰è£…ROS===============###1ã€è®¾ç½®sources.listÂ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'###2ã€è®¾ç½®keysÂ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116###3ã€å®‰è£…####ç¡®å®šè½¯ä»¶åŒ…ç´¢å¼•æ˜¯æœ€æ–°çš„Â sudo apt-get update####å®‰è£…Desktop-FullÂ sudo apt-get install ros-kinetic-desktop-full####å®‰è£…DesktopÂ sudo apt-get install ros-kinetic-desktop####å®‰è£…ROS-BaseÂ sudo apt-get install ros-kinetic-ros-base###4ã€åˆå§‹åŒ–rosdepÂ sudo rosdep initÂ rosdep update###5ã€è®¾ç½®çŽ¯å¢ƒÂ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrcÂ source ~/.bashrc###6ã€å®‰è£…rosinstallÂ sudo apt-get install python-rosinstall
+°²×°ROS
+===============
+
+###1¡¢ÉèÖÃsources.list
+	sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+###2¡¢ÉèÖÃkeys
+	sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
+
+###3¡¢°²×°
+####È·¶¨Èí¼þ°üË÷ÒýÊÇ×îÐÂµÄ
+	sudo apt-get update
+####°²×°Desktop-Full
+	sudo apt-get install ros-kinetic-desktop-full
+####°²×°Desktop
+	sudo apt-get install ros-kinetic-desktop
+####°²×°ROS-Base
+	sudo apt-get install ros-kinetic-ros-base
+
+###4¡¢³õÊ¼»¯rosdep
+	sudo rosdep init
+	rosdep update
+
+###5¡¢ÉèÖÃ»·¾³
+	echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+	source ~/.bashrc
+
+###6¡¢°²×°rosinstall
+	sudo apt-get install python-rosinstall
+
