@@ -1,5 +1,5 @@
 ###1.	死锁截图
-![image](https://github.com/LinXiaodan/ES2016_14353188/raw/master/images/deadlock.PNG)
+![image](https://github.com/LinXiaodan/ES2016_14353188/raw/master/images/deadlock.png)
 ###2.	产生死锁的4个必要条件
 	互斥、循环等待、不剥夺、请求与保持
 
