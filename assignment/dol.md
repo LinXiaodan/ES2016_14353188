@@ -1,7 +1,7 @@
 ###改完的*.dot截图
-Example1
+####Example1
 ![image](https://github.com/LinXiaodan/ES2016_14353188/raw/master/images/example1.PNG)
-Example2
+####Example2
 ![image](https://github.com/LinXiaodan/ES2016_14353188/raw/master/images/example2.PNG)
 ###修改方式
 	Example1将square.c中的i*i改为i*i*i
