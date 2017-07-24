@@ -1,9 +1,9 @@
 DOL配置
 ======================================
 
-###1、电脑中已经安装好了VMware，在VWware中安装Ubuntu16.0（64位），以下步骤一开始均在/home中
+### 1、电脑中已经安装好了VMware，在VWware中安装Ubuntu16.0（64位），以下步骤一开始均在/home中
 
-###2、配置C/C++环境
+### 2、配置C/C++环境
 	1）sudo apt-get update		#更新原信息
 		出现问题：E:Could not lock /var/lib/dpkg/lock -open
 		可能原因：可能上次安装没正常完成，导致资源被锁
@@ -29,7 +29,7 @@ DOL配置
 		 成功结果：g++: fatal error:no input files
 					compilation terminated
 				   
-###3、配置java环境
+### 3、配置java环境
 	1）将压缩包jdk-8u40-linux-x64.gz复制到/home下
 	2）在/usr/lib下创建文件夹java，将压缩包解压到该文件夹下，重命名为jd8k
 		cd /usr/lib
@@ -54,11 +54,11 @@ DOL配置
 		java
 		javac
 			
-###4、配置Build环境、解压缩工具
+### 4、配置Build环境、解压缩工具
 	1）sudo apt-get install ant		#build环境
 	2）sudo apt-get install unzip
 		
-###5、配置systemc
+### 5、配置systemc
 	1）将压缩包systemc-2.3.1.gz复制到/home下
 	2）解压
 		tar -zxvf systemc-2.3.1.gz
@@ -71,7 +71,7 @@ DOL配置
 		cd ..
 		pwd		#记录获得的当前路径为/home/linxiaodan/systemc-2.3.1
 			
-###6、配置DOL
+### 6、配置DOL
 	1）将压缩包dol_ethz.zip复制到/home下
 	2）解压
 		mkdir dol		#新建文件夹dol
